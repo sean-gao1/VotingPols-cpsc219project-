@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="304.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SetupPollTrackerController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="clearButton" layoutX="163.0" layoutY="209.0" mnemonicParsing="false" onAction="#reactToClear" text="Clear" />
+    <Button fx:id="submitButton" layoutX="243.0" layoutY="209.0" mnemonicParsing="false" onAction="#reactToSubmit" text="Submit" />
+    <TextField fx:id="numberOfPolls" layoutX="261.0" layoutY="54.0" onAction="#reactToSubmit" prefWidth="200.0" />
+    <TextField id="numOfSeats" fx:id="numberOfSeats" layoutX="261.0" layoutY="100.0" onAction="#reactToSubmit" prefWidth="200.0" />
+    <Label layoutX="88.0" layoutY="60.0" text="Number of polls to track:" />
+    <Label layoutX="6.0" layoutY="106.0" text="Number of seats available in election:" />
+  </children>
+</AnchorPane>

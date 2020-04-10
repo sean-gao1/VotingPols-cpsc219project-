@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefWidth="671.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.AddPollController">
+  <!-- TODO Add Nodes -->
+ 
+              <children>
+                <VBox layoutX="9.0" layoutY="0.0" prefHeight="316.0" prefWidth="655.0">
+                  <children>
+                    <HBox alignment="BOTTOM_CENTER" prefHeight="135.0" prefWidth="655.0">
+                      <children>
+                        <Label text="Name of poll to add:">
+                          <HBox.margin>
+                            <Insets right="10.0" />
+                          </HBox.margin>
+                        </Label>
+                        <TextField fx:id="myTextField" onKeyTyped="#keyTyped" prefWidth="300.0">
+                          <HBox.margin>
+                            <Insets left="10.0" />
+                          </HBox.margin>
+                        </TextField>
+                      </children>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="655.0">
+                      <children>
+                        <Label text="Select poll placement:">
+                          <HBox.margin>
+                            <Insets bottom="20.0" right="10.0" />
+                          </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="myChoiceBox" prefWidth="200.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList" />
+                          </items>
+                          <HBox.margin>
+                            <Insets bottom="20.0" left="10.0" />
+                          </HBox.margin>
+                        </ChoiceBox>
+                      </children>
+                    </HBox>
+                    <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="655.0">
+                      <children>
+                        <Button id="ClearButton" fx:id="clearButton" mnemonicParsing="false" onAction="#ClearButtonReaction" text="Clear">
+                          <HBox.margin>
+                            <Insets bottom="15.0" right="25.0" />
+                          </HBox.margin>
+                        </Button>
+                        <Button id="AddButton" fx:id="addButton" mnemonicParsing="false" onAction="#addButtonReaction" text="Add Poll">
+                          <HBox.margin>
+                            <Insets bottom="15.0" left="25.0" />
+                          </HBox.margin>
+                        </Button>
+                      </children>
+                      <VBox.margin>
+                        <Insets />
+                      </VBox.margin>
+                    </HBox>
+                  </children>
+                </VBox>
+              </children>
+            </AnchorPane>
+       

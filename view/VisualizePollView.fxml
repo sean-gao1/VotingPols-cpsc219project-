@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="372.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisualizePollController">
+   <children>
+      <AnchorPane layoutX="-135.0" layoutY="-103.0" prefHeight="200.0" prefWidth="200.0" />
+      <ChoiceBox fx:id="mychoicebox" layoutX="148.0" layoutY="30.0" prefWidth="150.0" />
+      <PieChart fx:id="piechartbyseats" layoutX="-2.0" layoutY="62.0" prefHeight="312.0" prefWidth="286.0" title="By seats" />
+      <PieChart fx:id="piechartbypercent" layoutX="251.0" layoutY="65.0" prefHeight="303.0" prefWidth="277.0" title="By percentage" />
+   </children>
+</AnchorPane>
